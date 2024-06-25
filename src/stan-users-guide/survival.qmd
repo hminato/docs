@@ -688,7 +688,7 @@ transformed data {
   for (n in 2:N) {
     if (!(t[n] < t[n - 1])) {
       reject("times must be strictly decreasing, but found"
-             "!(t[", n, "] < t[, ", (n - 1), "])");
+             "!(t[", n, "] < t[", (n - 1), "])");
     }   
   }
 }
